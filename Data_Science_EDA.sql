@@ -52,6 +52,17 @@ group by job_title, employee_residence
 order by sum_salary desc;
 
 
+--the total salary by year
+select work_year, sum(salary_in_usd) as sum_salary,
+
+FROM Data_Science_Salaries.Data_Science
+
+
+group by work_year
+
+order by sum_salary desc;
+
+
 --the total salary for all regions
 select job_title, employee_residence, sum(salary_in_usd) as sum_salary,
 
